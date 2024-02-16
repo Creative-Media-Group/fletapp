@@ -2,9 +2,7 @@ import flet as ft
 
 
 def main(page: ft.Page):
-    file_picker = ft.FilePicker()
-    page.overlay.append(file_picker)
-    page.update()
+    page.add(ft.SafeArea(ft.Text("Hello, Flet!")))
 
 
 ft.app(main)
