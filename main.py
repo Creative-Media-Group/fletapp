@@ -2,7 +2,7 @@ import flet as ft
 
 
 def main(page: ft.Page):
-    page.add(ft.SafeArea(ft.Video(playlist=[""])))
+    page.add(ft.SafeArea(ft.Video(playlist=["assets/video.mp4"])))
 
 
 ft.app(main)
