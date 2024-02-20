@@ -73,9 +73,8 @@ def main(page: ft.Page):
         page.window_full_screen = False
         page.update()
         print("Video exited fullscreen!")
-
-    page.add(
-        video := ft.Video(
+    
+    video = ft.Video(
             expand=True,
             playlist=sample_media[0:2],
             playlist_mode=ft.PlaylistMode.LOOP,
@@ -88,7 +87,9 @@ def main(page: ft.Page):
             on_loaded=lambda e: print("Video loaded successfully!"),
             on_enter_fullscreen=enter_fullscreen,
             on_exit_fullscreen=exit_fullscreen,
-        ),
+        )
+    page.add(
+        video,
         ft.Row(
             wrap=True,
             alignment=ft.MainAxisAlignment.CENTER,
