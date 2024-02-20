@@ -4,7 +4,7 @@ import flet as ft
 
 def main(page: ft.Page):
     page.theme_mode = ft.ThemeMode.LIGHT
-    page.title = "TheEthicalVideo"
+    page.title = "FletApp"
     page.window_always_on_top = True
     page.spacing = 20
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
@@ -79,7 +79,7 @@ def main(page: ft.Page):
             expand=True,
             playlist=sample_media[0:2],
             playlist_mode=ft.PlaylistMode.LOOP,
-            fill_color=ft.colors.BLUE_400,
+            #fill_color=ft.colors.BLUE_400,
             aspect_ratio=16 / 9,
             volume=100,
             autoplay=False,
