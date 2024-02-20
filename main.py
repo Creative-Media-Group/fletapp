@@ -73,21 +73,21 @@ def main(page: ft.Page):
         page.window_full_screen = False
         page.update()
         print("Video exited fullscreen!")
-    
+
     video = ft.Video(
-            expand=True,
-            playlist=sample_media[0:2],
-            playlist_mode=ft.PlaylistMode.LOOP,
-            # fill_color=ft.colors.BLUE_400,
-            aspect_ratio=16 / 9,
-            volume=100,
-            autoplay=False,
-            filter_quality=ft.FilterQuality.HIGH,
-            muted=False,
-            on_loaded=lambda e: print("Video loaded successfully!"),
-            on_enter_fullscreen=enter_fullscreen,
-            on_exit_fullscreen=exit_fullscreen,
-        )
+        expand=True,
+        playlist=sample_media[0:2],
+        playlist_mode=ft.PlaylistMode.LOOP,
+        # fill_color=ft.colors.BLUE_400,
+        aspect_ratio=16 / 9,
+        volume=100,
+        autoplay=False,
+        filter_quality=ft.FilterQuality.HIGH,
+        muted=False,
+        on_loaded=lambda e: print("Video loaded successfully!"),
+        on_enter_fullscreen=enter_fullscreen,
+        on_exit_fullscreen=exit_fullscreen,
+    )
     page.add(
         video,
         ft.Row(
