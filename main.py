@@ -8,6 +8,7 @@ def main(page: ft.Page):
     page.window_always_on_top = True
     page.spacing = 20
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
+    page.appbar = ft.AppBar(title=ft.Text(value=page.title))
 
     def handle_pause(e):
         video.pause()
