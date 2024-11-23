@@ -5,7 +5,7 @@ import flet as ft
 def main(page: ft.Page):
     page.theme_mode = ft.ThemeMode.LIGHT
     page.title = "FletApp"
-    page.window_always_on_top = True
+    page.window.always_on_top = True
     page.spacing = 20
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
     page.appbar = ft.AppBar(title=ft.Text(value=page.title))
@@ -77,7 +77,7 @@ def main(page: ft.Page):
 
     video = ft.Video(
         expand=True,
-        playlist=sample_media[0:2],
+        playlist=sample_media[0],
         playlist_mode=ft.PlaylistMode.LOOP,
         # fill_color=ft.colors.BLUE_400,
         aspect_ratio=16 / 9,
