@@ -6,6 +6,9 @@ readme = "README.md"
 requires-python = ">=3.8"
 dependencies = ["flet==0.25.1", "mylocale"]
 
+[tool.flet.flutter.dependencies]
+flet_video = "^0.25.1"
+flet_audio = "^0.25.1"
 
 [tool.flet]
 # org name in reverse domain name notation, e.g. "com.mycompany".
@@ -24,3 +27,8 @@ copyright = "Copyright (C) 2024 by Creative Media Group"
 
 [tool.flet.app]
 path = "src"
+
+[tool.flet.compile]
+app = true
+packages = true
+cleanup = true
