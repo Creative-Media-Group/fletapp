@@ -3,38 +3,30 @@ name = "fletapp"
 version = "0.1.0"
 description = ""
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 authors = [{ name = "Flet developer", email = "you@example.com" }]
 dependencies = [
-    "flet==0.28.3",
+    "flet==0.70.0.dev5623",
     "mylocale",
     "git+https://github.com/flet-dev/flet-video.git",
-    "flet_audio",
+    "git+https://github.com/flet-dev/flet-audio.git",
 ]
 
 [tool.flet]
-# org name in reverse domain name notation, e.g. "com.mycompany".
-# Combined with project.name to build bundle ID for iOS and Android apps
+# Docs: https://flet.dev/docs/publish
 org = "de.cmg"
-
-# project display name that is used as an app title on Android and iOS home screens,
-# shown in window titles and about app dialogs on desktop.
 product = "Video Player"
-
-# company name to display in about app dialogs
 company = "Creative Media Group"
-
-# copyright text to display in about app dialogs
 copyright = "Copyright (C) 2025 by Creative Media Group"
 
 [tool.flet.app]
 path = "src"
 
 [tool.uv]
-dev-dependencies = ["flet[all]==0.28.3"]
+dev-dependencies = ["flet[all]==0.70.0.dev5623"]
 
 [tool.poetry]
 package-mode = false
 
 [tool.poetry.group.dev.dependencies]
-flet = { extras = ["all"], version = "0.28.3" }
+flet = { extras = ["all"], version = "0.70.0.dev5623" }
