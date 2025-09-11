@@ -5,7 +5,12 @@ description = ""
 readme = "README.md"
 requires-python = ">=3.9"
 authors = [{ name = "Flet developer", email = "you@example.com" }]
-dependencies = ["flet==0.28.3", "mylocale", "flet_video", "flet_audio"]
+dependencies = [
+    "flet==0.28.3",
+    "mylocale",
+    "git+https://github.com/flet-dev/flet-video.git",
+    "flet_audio",
+]
 
 [tool.flet]
 # org name in reverse domain name notation, e.g. "com.mycompany".
